@@ -4,6 +4,7 @@
 
 module "eks_vpc" {
   source = "./eks_vpc"
+  eks_cluster_name = var.eks_cluster_name
 
   environment     = var.environment
   region_name     = var.region_name
